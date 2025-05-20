@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tipe Data Object</title>
+    </head>
+    <body>
+        <script>
+            const person = {
+                name: 'Eko Kurniawan',
+                alamat: 'Indonesia',
+                umur: 30,
+            };
+
+            // person['name'] = 'Eko Kurniawan';
+            // person['alamat'] = 'Indonesia';
+            // person['umur'] = 5;
+
+            console.log(`Nama : ${person.name}`);
+            console.log(`Alamat : ${person.alamat}`);
+            console.log(`Umur : ${person.umur}`);
+
+            console.table(person);
+
+            delete person['umur'];
+
+            console.table(person);
+        </script>
+    </body>
+</html>
