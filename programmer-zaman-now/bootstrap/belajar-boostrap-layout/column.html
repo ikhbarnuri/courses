@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Column</title>
+        <link rel="stylesheet" href="../belajar-bootstrap-dasar/bootstrap/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="mb-3">
+                <div class="col-6 bg-primary float-end">Kolom</div>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusantium similique iusto
+                    accusamus, porro quisquam temporibus dolorum repellat corporis doloremque veniam beatae distinctio
+                    ratione voluptates voluptatibus officiis error, nulla repudiandae!
+                </div>
+            </div>
+
+            <div class="row bg-secondary mb-3">
+                <div class="col-2 me-auto bg-primary">Kolom</div>
+                <div class="col-2 me-auto bg-primary">Kolom</div>
+                <div class="col-2 bg-primary">Kolom</div>
+            </div>
+
+            <div class="row bg-secondary mb-3">
+                <div class="col-2 bg-primary">Kolom</div>
+                <div class="col-2 offset-2 bg-primary">Kolom</div>
+                <div class="col-2 offset-2 bg-primary">Kolom</div>
+            </div>
+
+            <div class="row bg-secondary mb-3">
+                <div class="col bg-primary">Kolom</div>
+                <div class="col bg-primary">Kolom</div>
+                <div class="w-100"></div>
+                <div class="col bg-warning">Kolom</div>
+                <div class="col bg-warning">Kolom</div>
+            </div>
+
+            <div class="row bg-secondary mb-3" style="height: 200px">
+                <div class="col bg-primary align-self-start">Satu</div>
+                <div class="col bg-primary align-self-center">Dua</div>
+                <div class="col bg-primary align-self-end">Tiga</div>
+            </div>
+
+            <div
+                class="row bg-secondary mb-3 justify-content-end align-items-center justify-content-center"
+                style="height: 200px"
+            >
+                <div class="col-2 bg-primary">Satu</div>
+                <div class="col-2 bg-primary">Dua</div>
+                <div class="col-2 bg-primary">Tiga</div>
+            </div>
+
+            <div class="row bg-secondary" style="height: 200px">
+                <div class="col bg-primary align-self-start">Satu</div>
+                <div class="col bg-primary align-self-center">Dua</div>
+                <div class="col bg-primary align-self-end">Tiga</div>
+            </div>
+        </div>
+
+        <script src="../belajar-bootstrap-dasar/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
