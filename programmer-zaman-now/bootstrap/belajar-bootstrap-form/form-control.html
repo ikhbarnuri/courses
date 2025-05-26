@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Control</title>
+        <link rel="stylesheet" href="../belajar-bootstrap-dasar/bootstrap/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Form Control</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username:</label>
+                            <input
+                                type="text"
+                                class="form-control-plaintext"
+                                readonly
+                                placeholder="Email atau Nomor Telepon"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password:</label>
+                            <input type="password" class="form-control" />
+                            <div class="form-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat necessitatibus nisi
+                                natus maxime fugit repellat aperiam distinctio quas optio, molestias eius laborum illum
+                                ad quis aut modi corporis ipsum cumque?
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Profile:</label>
+                            <input type="file" class="form-control" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Color:</label>
+                            <input type="color" class="form-control form-control-color" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Color:</label>
+                            <input type="text" class="form-control" list="datalist" />
+                            <datalist id="datalist">
+                                <option value="Merah">Merah</option>
+                                <option value="Kuning">Kuning</option>
+                                <option value="Hijau">Hijau</option>
+                            </datalist>
+                        </div>
+
+                        <div class="mb-3 text-end">
+                            <button class="btn btn-primary">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="../belajar-bootstrap-dasar/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

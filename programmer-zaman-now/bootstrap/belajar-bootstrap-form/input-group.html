@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Control</title>
+        <link rel="stylesheet" href="../belajar-bootstrap-dasar/bootstrap/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <form action="">
+                <label for="nilai" class="form-label">Email:</label>
+                <div class="input-group input-group-lg mb-3">
+                    <input type="text" id="email" class="form-control" placeholder="Username" />
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="Domain" />
+                    <button class="btn btn-outline-primary">Check Email</button>
+                </div>
+
+                <label for="nilai" class="form-label">Hobby:</label>
+                <div class="input-group input-group-lg mb-3">
+                    <div class="input-group-text">
+                        <input type="checkbox" class="form-check-input mt-0" />
+                    </div>
+                    <input type="text" class="form-control" placeholder="Domain" />
+                    <span class="input-group-text">Contoh</span>
+                </div>
+
+                <label for="contoh" class="form-label">Contoh</label>
+                <div class="input-group mb-3">
+                    <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Anothr Action</a>
+                        </li>
+                    </ul>
+                    <input type="text" name="contoh" id="contoh" class="form-control" />
+                </div>
+
+                <div class="input-group mb-3">
+                    <label for="contohSelect" class="input-group-text">Options</label>
+                    <select class="form-select" name="contohSelect" id="contohSelect">
+                        <option value="One">One</option>
+                        <option value="Two">Two</option>
+                        <option value="Three">Three</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <script src="../belajar-bootstrap-dasar/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
