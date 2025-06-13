@@ -1,9 +1,11 @@
 void main(List<String> args) {
+  var name = 'Eko';
+
   void sayHello() {
-    print('Hello inner Function');
+    var hello = 'Hello $name';
+    print(hello);
   }
 
-  sayHello();
   sayHello();
 }
 
