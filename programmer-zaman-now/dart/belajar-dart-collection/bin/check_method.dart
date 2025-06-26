@@ -4,4 +4,6 @@ void main(List<String> args) {
   print(numbers.any((el) => el > 5));
 
   print(numbers.every((el) => el > 5));
+
+  print(numbers.contains(3));
 }
