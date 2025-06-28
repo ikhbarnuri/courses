@@ -1,0 +1,5 @@
+test_on: "linux"
+
+tags:
+  second:
+    skip: "Second tag is disable"
