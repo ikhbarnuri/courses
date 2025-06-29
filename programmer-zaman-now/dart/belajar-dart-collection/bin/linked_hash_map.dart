@@ -1,7 +1,7 @@
 import 'dart:collection';
 
 void main(List<String> args) {
-  final scores = LinkedHashMap<String, int>();
+  final scores = <String, int>{};
 
   scores['Eko'] = 100;
   scores['Budi'] = 85;

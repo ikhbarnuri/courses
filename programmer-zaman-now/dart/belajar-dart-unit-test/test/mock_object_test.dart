@@ -3,7 +3,6 @@ import 'package:belajar_dart_unit_test/src/book_repository.dart';
 import 'package:belajar_dart_unit_test/src/book_service.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:test/scaffolding.dart';
 import 'package:test/test.dart';
 
 @GenerateNiceMocks([MockSpec<BookRepository>()])

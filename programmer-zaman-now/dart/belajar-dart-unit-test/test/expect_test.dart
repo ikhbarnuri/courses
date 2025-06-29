@@ -1,4 +1,3 @@
-import 'package:test/scaffolding.dart';
 import 'package:test/test.dart';
 
 String sayHello(String name) {

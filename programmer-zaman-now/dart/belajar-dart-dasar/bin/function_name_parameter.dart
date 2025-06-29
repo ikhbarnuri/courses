@@ -1,5 +1,3 @@
-import 'dart:collection';
-
 void main(List<String> args) {
   sayHello(firstName: 'Eko', lastName: 'Kurniawan');
   sayHello(firstName: 'Budi');
