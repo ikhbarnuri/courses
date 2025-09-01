@@ -1,0 +1,16 @@
+firstName: Eko
+middleName: Kurniawan
+lastName: Khannedy
+hobbies:
+    - Coding
+    - Reading
+    - Gaming
+address:
+    street: Jl. xxxxx
+    city: Jakarta
+    country: Indonesia
+wallet:
+    - type: cash
+      amount: 10000
+    - type: debit
+      amount: 50000
