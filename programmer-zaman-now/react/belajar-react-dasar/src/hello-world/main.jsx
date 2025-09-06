@@ -34,6 +34,7 @@ createRoot(document.getElementById('root')).render(
             <SayHelloForm />
 
             <Counter />
+            <Counter />
         </Container>
     </StrictMode>
 );

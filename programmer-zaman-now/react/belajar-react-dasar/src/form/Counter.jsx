@@ -1,8 +1,12 @@
+import { useState } from 'react';
+
 export default function Counter() {
-    let counter = 0;
+    let [counter, setCounter] = useState(0);
 
     function handleClick() {
-        counter++;
+        setCounter((c) => c + 1);
+        setCounter((c) => c + 1);
+        setCounter((c) => c + 1);
         console.log(counter);
     }
 
