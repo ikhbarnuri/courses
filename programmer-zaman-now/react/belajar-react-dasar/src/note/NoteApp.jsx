@@ -2,6 +2,7 @@ import React, { useReducer } from 'react';
 import { useImmer, useImmerReducer } from 'use-immer';
 import NoteForm from './NoteForm';
 import NoteList from './NoteList';
+import { NoteDispatchContext, NotesContext } from './NotesContext';
 
 let id = 0;
 
@@ -69,54 +70,17 @@ function notesReducer(notes, action) {
 }
 
 export default function NoteApp() {
-    // const [notes, setNotes] = useImmer(initialNotes);
-    // const [notes, dispatch] = useReducer(notesReducer, initialNotes);
     const [notes, dispatch] = useImmerReducer(notesReducer, initialNotes);
-
-    function handleAddNote(text) {
-        // setNotes((draft) => {
-        //     draft.push({
-        //         id: id++,
-        //         text: text,
-        //         done: false,
-        //     });
-        // });
-
-        dispatch({
-            type: 'ADD_NOTE',
-            text: text,
-        });
-    }
-
-    function handleChangeNote(note) {
-        // setNotes((draft) => {
-        //     const index = draft.findIndex((item) => item.id === note.id);
-        //     draft[index] = note;
-        // });
-
-        dispatch({
-            ...note,
-            type: 'CHANGE_NOTE',
-        });
-    }
-
-    function handleDeleteNote(note) {
-        // setNotes((draft) => {
-        //     const index = draft.findIndex((item) => item.id === note.id);
-        //     draft.splice(index, 1);
-        // });
-
-        dispatch({
-            type: 'DELETE_NOTE',
-            id: note.id,
-        });
-    }
 
     return (
         <div>
-            <h1>Note App</h1>
-            <NoteForm onAddNote={handleAddNote} />
-            <NoteList notes={notes} onChange={handleChangeNote} onDelete={handleDeleteNote} />
+            <NotesContext.Provider value={notes}>
+                <NoteDispatchContext.Provider value={dispatch}>
+                    <h1>Note App</h1>
+                    <NoteForm />
+                    <NoteList />
+                </NoteDispatchContext.Provider>
+            </NotesContext.Provider>
         </div>
     );
 }
