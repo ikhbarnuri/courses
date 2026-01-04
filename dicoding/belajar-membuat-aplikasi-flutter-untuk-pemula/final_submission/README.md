@@ -1,16 +1,38 @@
-# final_submission
+# Final Submission - Belajar Membuat Aplikasi Flutter untuk Pemula
 
-A new Flutter project.
+## Tentang Project
 
-## Getting Started
+Ini adalah project **Final Submission** dari kursus **"Belajar Membuat Aplikasi Flutter untuk Pemula"** di [Dicoding](https://dicoding.com).
 
-This project is a starting point for a Flutter application.
+Project ini merupakan aplikasi Flutter yang terinspirasi dari desain Pinterest berikut:
+[https://id.pinterest.com/pin/908319818611224899](https://id.pinterest.com/pin/908319818611224899)
 
-A few resources to get you started if this is your first Flutter project:
+## Deskripsi Aplikasi
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Aplikasi ini adalah aplikasi mobile yang menampilkan daftar produk (kopi) dengan fitur-fitur seperti:
+- Halaman selamat datang
+- Menu dengan daftar produk
+- Fitur favorit/wishlist
+- Keranjang belanja
+- Profil pengguna
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Struktur Project
+
+```
+lib/
+├── main.dart              # Entry point aplikasi
+├── data/
+│   └── coffee_list.dart   # Data produk kopi
+├── models/
+│   └── coffee.dart        # Model data kopi
+├── screens/               # Halaman-halaman aplikasi
+│   ├── welcome_screen.dart
+│   ├── home_screen.dart
+│   ├── menu_screen.dart
+│   ├── cart_screen.dart
+│   ├── favorites_screen.dart
+│   └── profile_screen.dart
+└── widgets/               # Widget custom
+    ├── coffee_card.dart
+    └── bigger_text.dart
+```
