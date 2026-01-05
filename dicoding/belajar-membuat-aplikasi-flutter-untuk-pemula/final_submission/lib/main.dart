@@ -1,4 +1,5 @@
 import 'package:final_submission/screens/first_screen.dart';
+import 'package:final_submission/screens/welcome_screen.dart';
 import 'package:final_submission/widgets/bigger_text.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Coffee Shop - Cavosh',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const FirstScreen(),
+      home: const WelcomeScreen(),
     );
   }
 }
