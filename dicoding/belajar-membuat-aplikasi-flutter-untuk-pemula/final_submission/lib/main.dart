@@ -1,6 +1,4 @@
-import 'package:final_submission/screens/first_screen.dart';
 import 'package:final_submission/screens/welcome_screen.dart';
-import 'package:final_submission/widgets/bigger_text.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
