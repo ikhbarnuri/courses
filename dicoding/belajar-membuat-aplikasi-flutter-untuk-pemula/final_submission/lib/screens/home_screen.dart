@@ -5,6 +5,9 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SafeArea(child: Column()));
+    return Scaffold(
+      appBar: AppBar(title: const Text('Beranda')),
+      body: SafeArea(child: Column()),
+    );
   }
 }

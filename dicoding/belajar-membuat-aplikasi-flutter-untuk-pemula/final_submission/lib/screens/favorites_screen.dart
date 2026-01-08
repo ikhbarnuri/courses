@@ -5,6 +5,9 @@ class FavoritesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SafeArea(child: Column()));
+    return Scaffold(
+      appBar: AppBar(title: const Text('Favorit')),
+      body: SafeArea(child: Column()),
+    );
   }
 }

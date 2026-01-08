@@ -7,7 +7,7 @@ class FirstScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("First Screen"),
+        title: const Text("FirstScreen"),
         actions: [
           IconButton(onPressed: () => {}, icon: const Icon(Icons.search)),
         ],

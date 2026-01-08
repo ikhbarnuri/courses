@@ -5,6 +5,9 @@ class MenuScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SafeArea(child: Column()));
+    return Scaffold(
+      appBar: AppBar(title: const Text('Menu')),
+      body: SafeArea(child: Column()),
+    );
   }
 }

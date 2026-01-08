@@ -5,6 +5,9 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SafeArea(child: Column()));
+    return Scaffold(
+      appBar: AppBar(title: const Text('Keranjang')),
+      body: SafeArea(child: Column()),
+    );
   }
 }
